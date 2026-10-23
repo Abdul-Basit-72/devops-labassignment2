@@ -1,0 +1,24 @@
+const http = require('http');
+
+const PORT = 3000;
+
+const server = http.createServer((req, res) => {
+  res.writeHead(200, { 'Content-Type': 'text/html' });
+  res.end(`
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Docker Lab</title>
+      </head>
+      <body>
+        <h1>Hello from Docker!</h1>
+        <p>The Node.js application is running inside a container.</p>
+        <p>Abdul Basit Khan - FA23-BSE-042</p>
+      </body>
+    </html>
+  `);
+});
+
+server.listen(PORT, '0.0.0.0', () => {
+  console.log(`Server is running on port ${PORT}`);
+});

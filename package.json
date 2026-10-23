@@ -1,0 +1,9 @@
+{
+  "name": "bse-42-docker-lab",
+  "version": "1.0.0",
+  "description": "Minimal Node.js app for Docker lab",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  }
+}
